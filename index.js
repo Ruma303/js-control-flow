@@ -1,6 +1,7 @@
 //$ Costrutti condizionali
 
 //% Sintassi inline
+
 //if (1 + 1 == 2) console.log("É vero");
 // Output: É vero
 
@@ -26,8 +27,8 @@ const result = number > 0 ? "Positive" : number == 0 ? "Zero" : "Negative";
 console.log(result); //Negative */
 
 //% Switch Case
-
-/* let giorno = 3;
+/*
+let giorno = 3;
 let nomeGiorno;
 
 switch (giorno) {
@@ -55,5 +56,81 @@ switch (giorno) {
   default:
     nomeGiorno = "Giorno non valido";
 }
+console.log(nomeGiorno); // Output: "Mercoledì"
+ */
 
-console.log(nomeGiorno); // Output: "Mercoledì" */
+
+//$ Costrutti Ciclici
+
+//% Ciclo for
+
+/* for (let i = 1; i <= 5; i++) {
+  console.log(`Istruzione numero ${i}`);
+} */
+
+//% break
+/*
+for (let i = 1; i <= 5; i++) {
+  if(i === 3) {
+    break;
+  }
+  console.log(`Istruzione numero ${i}`);
+} */
+
+//% continue
+
+/* for (let i = 1; i <= 5; i++) {
+  if(i === 3) {
+    continue;
+  }
+  console.log(`Istruzione numero ${i}`);
+} */
+
+
+//% Ciclo while
+/* let number = 1;
+while(number <=5){
+  console.log(`Istruzione numero ${number}`);
+  number++;
+} */
+
+//% Ciclo do while
+/* let number = 1;
+do {
+  console.log(`Istruzione numero ${number}`);
+  number++;
+} while (number <=5) */
+
+
+//% Ciclo foreach
+
+//* con un parametro
+/* let array = ["Marco", "Paolo", "Sara", "Ester"];
+array.forEach(function(element) {
+  console.log(`Ciao ${element}`)
+}); */
+
+//* con due parametri
+/* array.forEach(function(element, index) {
+  console.log(`Ciao ${element} con id: ${index}`)
+}); */
+
+//* con arrow function
+/*
+let array = [1,2,3,4,5];
+array.forEach(element => {
+  console.log(`Istruzione numero ${element}`)
+}); */
+
+//% Ciclo for in
+
+/* let array = ["Marco", "Paolo", "Sara", "Ester"];
+for (nome in array) {
+  console.log(`Nome: ${array[nome]}, posizione array: ${nome}`);
+} */
+
+//% Ciclo for in
+let array = [1,2,3,4];
+for (let number of array) {
+  console.log(`Posizione elemento: ${number}`);
+}
