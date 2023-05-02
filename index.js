@@ -27,7 +27,7 @@ console.log(result); //Negative */
 
 //% Switch Case
 
-let giorno = 3;
+/* let giorno = 3;
 let nomeGiorno;
 
 switch (giorno) {
@@ -56,4 +56,4 @@ switch (giorno) {
     nomeGiorno = "Giorno non valido";
 }
 
-console.log(nomeGiorno); // Output: "Mercoledì"
+console.log(nomeGiorno); // Output: "Mercoledì" */
