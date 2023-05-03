@@ -1,5 +1,22 @@
 //$ Costrutti condizionali
 
+//! Block Scope
+/* let sum = null, a = 5, b = 10;
+
+if(a > 3  &&   b != 12) {
+  sum = a + b;
+}
+console.log(sum); */
+
+/* let sum = null, a = 5, b = 10;
+let string = "Sono visibile perché sono nel contesto globale"
+
+if(a > 3  &&   b != 12) {
+  sum = a + b;
+  let string = "Non sono visibile fuori dal blocco"
+}
+console.log(string); */
+
 //% Sintassi inline
 
 //if (1 + 1 == 2) console.log("É vero");
@@ -130,7 +147,7 @@ for (nome in array) {
 } */
 
 //% Ciclo for in
-let array = [1,2,3,4];
+/* let array = [1,2,3,4];
 for (let number of array) {
   console.log(`Posizione elemento: ${number}`);
-}
+} */
